@@ -1,0 +1,23 @@
+@import url('alapstilus.css');
+
+body, main, footer {
+	font-size: 2em;
+}
+
+header, main, footer {
+	width: 90%;
+	max-width: 1200px;
+}
+
+header {
+	font-size: 1.3em;
+}
+
+a#nagybetu {display: none;}
+a#normalbetu {display: inline-block;}
+
+@media screen and (max-width: 767px) {
+    header, main, footer {
+        width: 100%;
+    }
+}

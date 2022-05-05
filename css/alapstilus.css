@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
+
+body {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    background-color: white;
+    background-image: url('../kepek/bg.jpg');
+    background-repeat: repeat;
+    background-size: 20%;
+    font-size: 100% !important;
+}
+
+#top, #tartalom, footer {
+    width: 80%;
+    min-width: 400px;
+    max-width: 1150px;
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.videoleiras {
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+}
+
+h1 {
+    font-size: 250% !important;
+}
+
+h2 {
+    font-size: 170% !important;
+}
+
+h3 {
+    font-size: 120% !important;
+}
+
+p {
+    text-align: justify;
+}
+
+#top a:link, #top a:visited {
+    color: black;
+    text-decoration: none;
+}
+#top a:hover, #top a:active {
+    color: white !important;
+}
+
+a:link {
+    color: #5E4A6D;
+}
+a:visited {
+    color: #8375A9;
+}
+a:hover {
+    color: darkslategray;
+}
+
+#gyengenlato a {
+    color: white;
+}
+
+th {
+    background-color: lightgray;
+}
+
+aside {
+    float: right;
+    width: 30vw;
+    padding: 10px;
+    margin: 0 10px 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+img {
+    color: black;
+    font: 50% Arial, Verdana, Helvetica, sans-serif; 
+    text-align: left;
+}
+
+ol li {
+    padding-bottom: 6px;
+}
+
+form label {
+    padding-top: 9px;
+}
+
+.logo {
+    width: 70%;
+    min-width: 150px;
+}
+
+.logosmall {
+    display: none;
+}
+
+.sub {
+    position: relative;
+    text-align: right;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 500%;
+    font-size: 5vw;
+}
+  
+.bottom-left {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.szurke, .menu:hover {
+    background-color: lightgray;
+}
+
+.ar {
+    text-align: center;
+}
+
+.urlap {
+    padding: 15px;
+}
+
+.urlapgomb {
+    margin-right: 10%;
+}
+
+.gombok {
+    text-align: center;
+    margin: 15px;
+}
+
+input[type=text], input[type=range]  {
+    width: 80%;
+}
+
+.textinput {
+    float: right;
+    width: 100%;
+    min-height: 75px;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
+}
+
+.kipozicional a {position: absolute; left: -9999px;}
+.kipozicional a:focus {position: static; background: white;}
+
+a#normalbetu {display: none;}
+
+.showcase {
+    width: 100%;
+    min-width: 200px;
+}
+
+#csillag {
+    padding-top: 18px;
+}
+
+@media screen and (max-width: 767px) {
+    #top, #tartalom, footer {
+        width: 100%;
+    }
+    .kapcsolat {
+        padding-bottom: 20px;
+    }
+    .h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .logo {
+        display: none;
+    }
+    .logosmall {
+        width: 50%;
+        min-width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media print {
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 3cm;
+        max-width: unset;
+        margin: 0 auto;
+    }
+
+    header, footer {
+        display: none;
+    }
+
+    iframe, video {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    a:after {content: " (" attr(href) ") ";}
+
+    img {
+        width: 50%;
+        text-align: left;
+    }
+
+    
+}

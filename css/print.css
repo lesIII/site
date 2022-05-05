@@ -1,0 +1,25 @@
+body {
+    margin: 2em;
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+}
+
+header, footer {
+    display: none;
+}
+
+iframe, video {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+a:after {content: " (" attr(href) ") ";}
+
+img {
+    width: 50%;
+    text-align: left;
+}
