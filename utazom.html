@@ -77,7 +77,7 @@
                             <label for="dublin">Dublin</label><br>
 
                             <label for="turnus">Turnus*</label><br>
-                            <select id="turnus" name="turnus"><br>
+                            <select id="turnus" name="turnus">
                                 <option value="2022nyar">2022 nyara</option>
                                 <option value="2022tel">2022 tele</option>
                                 <option value="2023tavasz">2023 tavasza</option>
@@ -88,26 +88,26 @@
                             <label for="letszam">Válassza ki, hány személy utazik*</label><br>
                             <input type="range" id="letszam" name="letszam" min="1" max="10" value="5" step="1" oninput="this.nextElementSibling.value = this.value">
                             <output>5</output>
-                            <br>
-
-                        </div>
-                        <div class="col-12 col-md-6">
-
-                            <label for="komment">Megjegyzés, kérdés, vélemény</label><br>
-                            <textarea class="textinput" placeholder="..." name="komment" rows="8" cols="20" maxlength="1500"></textarea>
-
-                            <input type="checkbox" id="hirlevel" name="hirlevel" value="hirlevel" checked>
-                            <label for="hirlevel">Feliratkozom a hírlevélre</label><br>
-
-                            <input type="checkbox" id="adat" name="adat" value="adat">
-                            <label for="adat">Elolvastam és elfogadom az Általános Szerződési Feltételekben foglaltakat.*</label><br>
-                                
-                            <div class="gombok">
-                            <input class="urlapgomb" type="submit" value="Küldés">
-
-                            <input class="urlapgomb" type="reset" value="Törlés">
                         </fieldset>
-                        <p id="csillag"><i>A *-al jelölt mezők kitöltése kötelező.</i></p>
+                    </div>
+                        <div class="col-12 col-md-6">
+                            <fieldset>
+                                <label for="komment">Megjegyzés, kérdés, vélemény</label><br>
+                                <textarea class="textinput" placeholder="..." name="komment" rows="8" cols="20" maxlength="1500"></textarea>
+
+                                <input type="checkbox" id="hirlevel" name="hirlevel" value="hirlevel" checked>
+                                <label for="hirlevel">Feliratkozom a hírlevélre</label><br>
+
+                                <input type="checkbox" id="adat" name="adat" value="adat">
+                                <label for="adat">Elolvastam és elfogadom az Általános Szerződési Feltételekben foglaltakat.*</label><br>
+                                    
+                                <div class="gombok">
+                                <input class="urlapgomb" type="submit" value="Küldés">
+
+                                <input class="urlapgomb" type="reset" value="Törlés">
+                            </fieldset>
+                            <p id="csillag"><i>A *-al jelölt mezők kitöltése kötelező.</i></p>
+                        </div>
                     </div>
                 </div>
             </form>
