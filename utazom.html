@@ -70,10 +70,10 @@
                             <label for="mobil">Mobil*</label><br>
                             <input type="text" id="mobil" name="mobil" placeholder="+36 00 000 0000" maxlength="10"><br>
 
-                            <label for="uticel">Úticél*</label><br>
-                            <input type="radio" id="galicia" name="uticel">
+                            <label for="galicia">Úticél*</label><br>
+                            <input type="radio" id="galicia" name="galicia">
                             <label for="galicia">Galícia</label><br>
-                            <input type="radio" id="dublin" name="uticel">
+                            <input type="radio" id="dublin" name="dublin">
                             <label for="dublin">Dublin</label><br>
 
                             <label for="turnus">Turnus*</label><br>
@@ -90,24 +90,21 @@
                             <output>5</output>
                         </fieldset>
                     </div>
-                        <div class="col-12 col-md-6">
-                            <fieldset>
-                                <label for="komment">Megjegyzés, kérdés, vélemény</label><br>
-                                <textarea class="textinput" placeholder="..." name="komment" rows="8" cols="20" maxlength="1500"></textarea>
+                    <div class="col-12 col-md-6">
+                        <label for="komment">Megjegyzés, kérdés, vélemény</label><br>
+                        <textarea class="textinput" placeholder="..." id="komment" name="kommentta" rows="8" cols="20" maxlength="1500"></textarea>
 
-                                <input type="checkbox" id="hirlevel" name="hirlevel" value="hirlevel" checked>
-                                <label for="hirlevel">Feliratkozom a hírlevélre</label><br>
+                        <input type="checkbox" id="hirlevel" name="hirlevel" value="hirlevel" checked>
+                        <label for="hirlevel">Feliratkozom a hírlevélre</label><br>
 
-                                <input type="checkbox" id="adat" name="adat" value="adat">
-                                <label for="adat">Elolvastam és elfogadom az Általános Szerződési Feltételekben foglaltakat.*</label><br>
+                        <input type="checkbox" id="adat" name="adat" value="adat">
+                        <label for="adat">Elolvastam és elfogadom az Általános Szerződési Feltételekben foglaltakat.*</label><br>
                                     
-                                <div class="gombok">
-                                <input class="urlapgomb" type="submit" value="Küldés">
-
-                                <input class="urlapgomb" type="reset" value="Törlés">
-                            </fieldset>
-                            <p id="csillag"><i>A *-al jelölt mezők kitöltése kötelező.</i></p>
+                        <div class="gombok">
+                            <input class="urlapgomb" type="submit" value="Küldés">
+                            <input class="urlapgomb" type="reset" value="Törlés">
                         </div>
+                        <p id="csillag"><i>A *-al jelölt mezők kitöltése kötelező.</i></p>
                     </div>
                 </div>
             </form>
