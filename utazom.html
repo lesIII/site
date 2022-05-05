@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/alapstilus.css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script type="text/javascript" src="scripts/styleswitcher.js"></script>
+
+    <title>Utazom! - €uroVisit</title>
+
+</head>
+
+<body>
+
+    <nav class="kipozicional">
+        <a href="#tartalom">Ugrás a tartalomra</a>
+    </nav>
+    <header id="top">
+        <nav>
+            <div class="row text-center border border-2 border-dark">
+                <div class="col-12 col-md-3 menu">
+                    <a href="index.html"><h2>Kezdőlap</h2></a>
+                </div>
+                <div class="col-12 col-md-3 menu">
+                    <a href="turaink.html"><h2>Túráink</h2></a>
+                </div>
+                <div class="col-12 col-md-3 menu">
+                    <a href="tippek.html"><h2>Tippek</h2></a>
+                </div>
+                <div class="col-12 col-md-3 szurke">
+                    <h2>Utazom!</h2>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="tartalom">
+        <nav id="gyengenlato">
+            <a class="btn btn-secondary btn-lg" role="button" id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;">Nagybetűs mód</a>
+            <a class="btn btn-secondary btn-lg" role="button" id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;">Normál mód</a>
+        </nav>
+        <h1>
+            Utazom!
+        </h1>
+        <h2>
+            Jelentkezés turnusra
+        </h2>
+        <div class="container-fluid">
+            <form id="jelentkezes" action="mailto:asd@inf.elte.hu" method="POST" enctype="text/plain">
+                <div class="form-group row border border-2 border-dark urlap">
+                    <div class="col-12 col-md-6">
+                        <fieldset>
+
+                            <label for="vnev">Vezetéknév*</label><br>
+                            <input type="text" id="vnev" name="vnev" placeholder="Vezetéknév" maxlength="60"><br>
+
+                            <label for="knev">Keresztnév*</label><br>
+                            <input type="text" id="knev" name="knev" placeholder="Keresztnevek" maxlength="60"><br>
+
+                            <label for="email">E-mail cím*</label><br>
+                            <input type="text" id="email" name="email" placeholder="@" maxlength="60"><br>
+
+                            <label for="mobil">Mobil*</label><br>
+                            <input type="text" id="mobil" name="mobil" placeholder="+36 00 000 0000" maxlength="10"><br>
+
+                            <label for="uticel">Úticél*</label><br>
+                            <input type="radio" id="galicia" name="uticel">
+                            <label for="galicia">Galícia</label><br>
+                            <input type="radio" id="dublin" name="uticel">
+                            <label for="dublin">Dublin</label><br>
+
+                            <label for="turnus">Turnus*</label><br>
+                            <select id="turnus" name="turnus"><br>
+                                <option value="2022nyar">2022 nyara</option>
+                                <option value="2022tel">2022 tele</option>
+                                <option value="2023tavasz">2023 tavasza</option>
+                                <option value="2023nyar">2023 nyara</option>
+                            </select>
+                            <br>
+
+                            <label for="letszam">Válassza ki, hány személy utazik*</label><br>
+                            <input type="range" id="letszam" name="letszam" min="1" max="10" value="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                            <output>5</output>
+                            <br>
+
+                        </div>
+                        <div class="col-12 col-md-6">
+
+                            <label for="komment">Megjegyzés, kérdés, vélemény</label><br>
+                            <textarea class="textinput" placeholder="..." name="komment" rows="8" cols="20" maxlength="1500"></textarea>
+
+                            <input type="checkbox" id="hirlevel" name="hirlevel" value="hirlevel" checked>
+                            <label for="hirlevel">Feliratkozom a hírlevélre</label><br>
+
+                            <input type="checkbox" id="adat" name="adat" value="adat">
+                            <label for="adat">Elolvastam és elfogadom az Általános Szerződési Feltételekben foglaltakat.*</label><br>
+                                
+                            <div class="gombok">
+                            <input class="urlapgomb" type="submit" value="Küldés">
+
+                            <input class="urlapgomb" type="reset" value="Törlés">
+                        </fieldset>
+                        <p id="csillag"><i>A *-al jelölt mezők kitöltése kötelező.</i></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid border border-2 border-dark">
+            <div class="row align-items-center szurke pb-2">
+                <div class="col-12 col-md-6">
+                    <h3>
+                        Elérhetőségeink
+                    </h3>
+                    <div><span lang="en">€uroVisit</span> Utazási Iroda, 1061 Budapest, Andrássy út 1.</div>
+                    <div>+36 1 429 9999</div>
+                    <div>foiroda@eurovisit.hu</div>
+                </div>
+                <div class="col">
+                    <a href="https://www.instagram.com/accounts/login/?next=/vistatravelofficial/" target="_blank"><img src="kepek/insta.png" alt="Az Instagram logója. Kattintson ida az instagram oldalunk eléréséhez." class="img-fluid" width="45"></a>
+                </div>
+                <div class="col">
+                    <a href="https://www.facebook.com/vista.utazasi.iroda" target="_blank"><img src="kepek/face.png" alt="A facebook logója. Kattintson ide a facebook oldalunk eléréséhez." class="img-fluid" width="45"></a>
+                </div>
+                <div class="col">
+                    <a href="https://twitter.com/vistautazas" target="_blank"><img src="kepek/twitter.png" alt="A twitter logója. Kattintsok ide a twitter oldalunk eléréséhez." class="img-fluid" width="45"></a>
+                </div>
+                <div class="col">
+                    <a href="mailto:eurovisit@gmail.com"><img src="kepek/gmail.webp" alt="A GMail logója. Kattintson ide, ha azonnal e-mailt szeretne írni nekünk." class="img-fluid" width="45"></a>
+                </div>
+                <div class="col">
+                    <a href="https://www.google.com/maps/place/Budapest,+Etele+%C3%BAt+68,+1115/@47.464367,19.0231923,17z/data=!3m1!4b1!4m5!3m4!1s0x4741ddc041c07a35:0xc0dc20e80d4dc9dc!8m2!3d47.464367!4d19.025381" target="_blank"><img src="kepek/maps.png" alt="A Google Térkép logója. Kattintson ide, ha szeretné meglátogatni főirodánkat." class="img-fluid" width="45"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
